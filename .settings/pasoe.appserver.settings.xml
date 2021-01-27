@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module-content version="12.2">
+    <module id="fb113798-3df9-4e04-8920-f5c670907ed9" name="LibraryApplication">
+        <resource path="AppServer" publish="true"/>
+    </module>
+</module-content>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pidl:description targetNamespace="urn:schemas-progress-com:bpm:appserverbinding:0001" serviceType="wsad:OEAppServerInvoke" xmlns:wsad="urn:schemas-progress-com:bpm:appserverbinding:0001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pidl="http://www.progress.com/caf/idl1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:java="http://www.progress.com/adapters/idl1.0/javatype">
+<pidl:types>
+</pidl:types>
+  <pidl:interface name="com.progress.openedge.pdt.bpminterfaces">
+    <pidl:operation name="Lender..CreateLender" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="lenderName" req="false" type="java:String">
+    </pidl:input>
+      <pidl:input messageLabel="lenderAuthenticated" req="false" type="java:Boolean">
+    </pidl:input>
+      <pidl:output messageLabel="successMessage" req="false" type="java:String">
+    </pidl:output>
+      <pidl:output messageLabel="success" req="false" type="java:Boolean">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="Lender..GetLender" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="lenderId" req="false" type="java:Integer">
+    </pidl:input>
+      <pidl:input messageLabel="lenderName" req="false" type="java:String">
+    </pidl:input>
+      <pidl:output messageLabel="getLender" req="false" type="java:Object">
+    </pidl:output>
+      <pidl:output messageLabel="successMessage" req="false" type="java:String">
+    </pidl:output>
+      <pidl:output messageLabel="success" req="false" type="java:Boolean">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="Lender..GetLenders" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:output messageLabel="getLender" req="false" type="java:Object">
+    </pidl:output>
+      <pidl:output messageLabel="successMessage" req="false" type="java:String">
+    </pidl:output>
+      <pidl:output messageLabel="success" req="false" type="java:Boolean">
+    </pidl:output>
+    </pidl:operation>
+  </pidl:interface>
+  <pidl:binding name="com.progress.openedge.pdt.bpmbindings" interface="wsad:com.progress.openedge.pdt.bpminterfaces" type="urn:schemas-progress-com:bpm:appserverbinding:0001">
+<wsad:Operation isPersistent="false" useFullName="false" executionMode="11">
+<wsad:Name>Lender</wsad:Name><wsad:ProcPath></wsad:ProcPath><wsad:ProPath></wsad:ProPath><wsad:ProcExt>cls</wsad:ProcExt><wsad:ProcDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="true" IsMappedToSubmit="false"><wsad:Name>Lender</wsad:Name><wsad:HelpString></wsad:HelpString><wsad:InternalProc isExcluded="false" hasBadParams="false"><wsad:Name>CreateLender</wsad:Name><wsad:ProcType>1</wsad:ProcType><wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false"><wsad:Name>CreateLender</wsad:Name><wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false"><wsad:Name>lenderName</wsad:Name><wsad:OrigName>lenderName</wsad:OrigName><wsad:Type>1</wsad:Type><wsad:Mode>1</wsad:Mode></wsad:Parameter><wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false"><wsad:Name>lenderAuthenticated</wsad:Name><wsad:OrigName>lenderAuthenticated</wsad:OrigName><wsad:Type>3</wsad:Type><wsad:Mode>1</wsad:Mode></wsad:Parameter><wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false"><wsad:Name>successMessage</wsad:Name><wsad:OrigName>successMessage</wsad:OrigName><wsad:Type>1</wsad:Type><wsad:Mode>2</wsad:Mode></wsad:Parameter><wsad:Parameter allowUnknown="true" ordinal="4" writeXmlBeforeImage="false"><wsad:Name>success</wsad:Name><wsad:OrigName>success</wsad:OrigName><wsad:Type>3</wsad:Type><wsad:Mode>2</wsad:Mode></wsad:Parameter></wsad:MethodDetail></wsad:InternalProc><wsad:InternalProc isExcluded="false" hasBadParams="false"><wsad:Name>GetLender</wsad:Name><wsad:ProcType>1</wsad:ProcType><wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false"><wsad:Name>GetLender</wsad:Name><wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false"><wsad:Name>lenderId</wsad:Name><wsad:OrigName>lenderId</wsad:OrigName><wsad:Type>4</wsad:Type><wsad:Mode>1</wsad:Mode></wsad:Parameter><wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false"><wsad:Name>lenderName</wsad:Name><wsad:OrigName>lenderName</wsad:OrigName><wsad:Type>1</wsad:Type><wsad:Mode>1</wsad:Mode></wsad:Parameter><wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false"><wsad:Name>getLender</wsad:Name><wsad:OrigName>getLender</wsad:OrigName><wsad:Type>15</wsad:Type><wsad:Mode>2</wsad:Mode><wsad:NamespaceUri xsi:nil="true"></wsad:NamespaceUri></wsad:Parameter><wsad:Parameter allowUnknown="true" ordinal="4" writeXmlBeforeImage="false"><wsad:Name>successMessage</wsad:Name><wsad:OrigName>successMessage</wsad:OrigName><wsad:Type>1</wsad:Type><wsad:Mode>2</wsad:Mode></wsad:Parameter><wsad:Parameter allowUnknown="true" ordinal="5" writeXmlBeforeImage="false"><wsad:Name>success</wsad:Name><wsad:OrigName>success</wsad:OrigName><wsad:Type>3</wsad:Type><wsad:Mode>2</wsad:Mode></wsad:Parameter></wsad:MethodDetail></wsad:InternalProc><wsad:InternalProc isExcluded="false" hasBadParams="false"><wsad:Name>GetLenders</wsad:Name><wsad:ProcType>1</wsad:ProcType><wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false"><wsad:Name>GetLenders</wsad:Name><wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false"><wsad:Name>getLender</wsad:Name><wsad:OrigName>getLender</wsad:OrigName><wsad:Type>15</wsad:Type><wsad:Mode>2</wsad:Mode><wsad:NamespaceUri xsi:nil="true"></wsad:NamespaceUri></wsad:Parameter><wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false"><wsad:Name>successMessage</wsad:Name><wsad:OrigName>successMessage</wsad:OrigName><wsad:Type>1</wsad:Type><wsad:Mode>2</wsad:Mode></wsad:Parameter><wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false"><wsad:Name>success</wsad:Name><wsad:OrigName>success</wsad:OrigName><wsad:Type>3</wsad:Type><wsad:Mode>2</wsad:Mode></wsad:Parameter></wsad:MethodDetail></wsad:InternalProc></wsad:ProcDetail></wsad:Operation>  </pidl:binding>
+</pidl:description>

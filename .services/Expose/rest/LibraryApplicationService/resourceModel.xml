@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prgs:model xmlns:prgs="http://www.progress.com/caf/camel/component/prgrs" id="resourceModel">
+  <prgs:resource consumes="application/json" name="_book" path="/book" produces="application/json">
+    <prgs:operation consumes="application/json" idls="LibraryApplication/.services/AppServer/Books.pidl::com.progress.openedge.pdt.bpmbindings" name="Books..CreateBook" produces="application/json" verb="POST"/>
+    <prgs:operation consumes="application/json" idls="LibraryApplication/.services/AppServer/Books.pidl::com.progress.openedge.pdt.bpmbindings" name="Books..GetBooks" produces="application/json" verb="GET"/>
+  </prgs:resource>
+  <prgs:resource consumes="application/json" name="_book_id" path="/book/{id}" produces="application/json">
+    <prgs:operation consumes="application/json" idls="LibraryApplication/.services/AppServer/Books.pidl::com.progress.openedge.pdt.bpmbindings" name="Books..GetBook" produces="application/json" verb="GET">
+      <prgs:param name="id" type="PATH"/>
+      <prgs:param name="bookHeadline" type="HEADER"/>
+      <prgs:param name="bookAuthor" type="HEADER"/>
+    </prgs:operation>
+    <prgs:operation consumes="application/json" idls="LibraryApplication/.services/AppServer/Books.pidl::com.progress.openedge.pdt.bpmbindings" name="Books..UpdateBook" produces="application/json" verb="PUT">
+      <prgs:param name="id" type="PATH"/>
+    </prgs:operation>
+    <prgs:operation consumes="application/json" idls="LibraryApplication/.services/AppServer/Books.pidl::com.progress.openedge.pdt.bpmbindings" name="Books..DeleteBook" produces="application/json" verb="DELETE">
+      <prgs:param name="id" type="PATH"/>
+    </prgs:operation>
+  </prgs:resource>
+  <prgs:resource consumes="application/json" name="_lender" path="/lender" produces="application/json">
+    <prgs:operation consumes="application/json" idls="LibraryApplication/.services/AppServer/Lender.pidl::com.progress.openedge.pdt.bpmbindings" name="Lender..CreateLender" produces="application/json" verb="POST"/>
+    <prgs:operation consumes="application/json" idls="LibraryApplication/.services/AppServer/Lender.pidl::com.progress.openedge.pdt.bpmbindings" name="Lender..GetLenders" produces="application/json" verb="GET"/>
+  </prgs:resource>
+  <prgs:resource consumes="application/json" name="_lender_id" path="/lender/{id}" produces="application/json">
+    <prgs:operation consumes="application/json" idls="LibraryApplication/.services/AppServer/Lender.pidl::com.progress.openedge.pdt.bpmbindings" name="Lender..GetLender" produces="application/json" verb="GET">
+      <prgs:param name="id" type="PATH"/>
+      <prgs:param name="lenderName" type="HEADER"/>
+    </prgs:operation>
+  </prgs:resource>
+</prgs:model>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module-content version="12.2">
+    <module id="0a081531-62ac-4b78-8c86-029cd5a4772f" name="LibraryApplication">
+        <resource path="PASOEContent\WEB-INF\openedge\AppServer" publish="true"/>
+    </module>
+</module-content>
